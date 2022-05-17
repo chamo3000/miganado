@@ -1,8 +1,37 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    //ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
-<div class="text-center">
+@*<div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    </div>*@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>:::Mi Ganado:::</title>
+</head>
+<body>
+
+    <h3>Inicio</h3>
+    @ViewBag.error
+    <form method="post" asp-controller="usuarioController" asp-action="login">
+        <table border="0" cellpadding="2" cellspacing="2">
+            <tr>
+                <td>Username</td>
+                <td><input type="text" autocomplete=false name="nombreUsuario"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" autocomplete=false name="passwordUsuario"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Login"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
