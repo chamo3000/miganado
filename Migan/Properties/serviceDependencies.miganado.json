@@ -4,6 +4,12 @@
       "secretStore": "AzureAppSettings",
       "type": "mssql.onprem",
       "connectionId": "ConnectionStrings:Conexion"
+    },
+    "secrets1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/Miganvault",
+      "type": "secrets.keyVault",
+      "connectionId": "VaultUri"
     }
   }
 }
