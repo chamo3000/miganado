@@ -2,7 +2,7 @@
 
 namespace Migan.Controllers
 {
-    public class ClaseController1 : Controller
+    public class ClienteController : Controller
     {
         public IActionResult Index()
         {

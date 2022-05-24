@@ -2,7 +2,7 @@
 
 namespace Migan.Controllers
 {
-    public class SexoController1 : Controller
+    public class SexoController : Controller
     {
         public IActionResult Index()
         {
