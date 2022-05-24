@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'miganado'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_24AE71AD460345F29AEFA0728862B576 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_473497F54C7E44709D543CC8A774A766 }}
           package: .
