@@ -2,7 +2,7 @@
 
 namespace Migan.Controllers
 {
-    public class GastoController1 : Controller
+    public class GastoController : Controller
     {
         public IActionResult Index()
         {
