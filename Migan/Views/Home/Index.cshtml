@@ -12,26 +12,40 @@
     <meta name="viewport" content="width=device-width" />
     <title>:::Mi Ganado:::</title>
 </head>
-<body>
+<body bgcolor="red" >
 
-    <h3>Inicio</h3>
+
     @ViewBag.error
-    <form method="post" asp-controller="usuarioController" asp-action="login">
-        <table border="0" cellpadding="2" cellspacing="2">
-            <tr>
-                <td>Username</td>
-                <td><input type="text" autocomplete=false name="nombreUsuario"></td>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <table border="2" cellpadding="0" cellspacing="0" align="center" bgcolor="grey">
+                <tr>
+            <td width="10"><img src="images/migan.jpg" height="100" width="100" ></td>
+            <td ><img src="images/migan_baner.jpg" height="15" width="100" align="right" ></td>
             </tr>
-            <tr>
-                <td>Password</td>
-                <td><input type="password" autocomplete=false name="passwordUsuario"></td>
+        <tr>
+            <td colspan=2 align="center"><B><FONT COLOR="white">Login</FONT></td>
             </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td><input type="submit" value="Login"></td>
-            </tr>
-        </table>
-    </form>
-
+        <tr>
+            <td colspan=2>
+                <form method="post" asp-controller="usuarioController" asp-action="login">
+                    <table border="0" cellpadding="1" cellspacing="1">
+                        <tr>
+                            <td><B><FONT COLOR="white">Username</FONT></td>
+                            <td><input type="text" autocomplete=false name="nombreUsuario"></td>
+                        </tr>
+                        <tr>
+                            <td><B><FONT COLOR="white">Password</FONT></td>
+                            <td><input type="password" autocomplete=false name="passwordUsuario"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input type="submit" value="Login"></td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+    
 </body>
 </html>
